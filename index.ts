@@ -1,5 +1,5 @@
 export default function getElementTyped<T extends HTMLElement>(selector: string, tagName: string): T | never {
-  const element = document.getElementById("user-input");
+  const element = document.querySelector(selector);
 
   if (!element) throw new Error("element can not found");
 
