@@ -3,7 +3,7 @@ export default function getElementTyped<T extends HTMLElement>(selector: string,
 
   if (!element) throw new Error("element can not found");
 
-  const elementTagName = element.tagName
+  const elementTagName = element.tagName;
   if (elementTagName == tagName) {
     return element as T;
   } else {
