@@ -13,6 +13,7 @@ export default function getElementTyped<T extends HTMLElement>(selector: string,
 
 // Arda tanrıkulu nun çözümü, fonksiyonu çağırırken tip belirtmeye gerek kalmıyor
 //fonksiyon tipi tagName argümanından infer ediyor.
+//https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_dom_d_.htmlelementtagnamemap.html
 export function getElementTyped2<TElementName extends keyof HTMLElementTagNameMap, TElement extends HTMLElementTagNameMap[TElementName]>(selector: string, tagName: TElementName): TElement | never {
   const element = document.querySelector(selector);
 
