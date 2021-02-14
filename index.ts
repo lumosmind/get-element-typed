@@ -11,3 +11,6 @@ export default function getElementTyped<T extends HTMLElement>(selector: string,
   }
 }
 
+
+//todo : bunu anla ve uygulamaya çalış
+// getElementTyped<TElement extends keyof HTMLElementTagNameMap, TElement extends HTMLElementTagNameMap[TElementName]>(selector:string, tagName: TElementName): TElement | never
